@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<h1 class="f_Monad s_heading dash align_right">VIEW</h1>
+<a href="/homepage/notif"><button class="logout">Go Back</button></a>
+<br><br><br>
+<hr class="mt_10"><br>
+
+<div class="bracket">
+<div class="invitation">
+    <div class="inv_title"><%= event.title %></div>
+    <div class="inv_date">On: <%= event.date.toDateString() %></div>
+    <div class="inv_creator">Created by: <%= event.createdBy %></div><br><br>
+    <div class="inv_body"><%= event.markdown %></div><br><br>
+    <div class="inv_footer"><%= event.footer %></div>
+
+    <form class="inline-block" method="POST" action="/homepage/event/show/<%= event._id %>/accept"><button type="submit">Accept</button></form>
+    <form class="inline-block" method="POST" action="/homepage/event/show/<%= event._id %>/decline"><button type="submit">Decline</button></form>
+</div>
+</div>

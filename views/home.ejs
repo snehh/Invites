@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<p class="f_Monad s_heading dash align_right">MY EVENTS</p>
+<div class="drop_menu">
+    Menu
+    <div class="drop_content">
+        <a href="/homepage/notif">Notifications</a><br>
+        <a href="/homepage/accepted">Accepted Invites</a><br>
+        <a href="/users/logout">Logout</a>
+</div>
+</div>
+<hr><div>Welcome, <%= user.name %></div>
+<a href="event/new"><button class="createnew">+ Create New</button></a>
+<br><br><br>
+
+<div class="container inv_container">
+    <% if(events.length == 0) { %>
+        <div class="italics">Your events will appear here</div>
+    <% } %>
+    <% events.forEach(event => { %>
+        <div class="inv_element">
+            <div class="card_title"><%= event.title %></div>
+            <div class="card_date">On: <%= event.date.toDateString() %></div><br>
+            <div><a href="/homepage/event/myevent/view/<%= event._id %>">View</a></div>
+        </div>
+    <% }) %>
+</div>

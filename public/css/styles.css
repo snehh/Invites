@@ -1,0 +1,312 @@
+
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Monad';
+    src: url('../fonts/Monad.otf');
+    font-style: normal;
+    font-weight: 200;
+}
+
+body{
+    font-family: Raleway;
+    font-weight: 100;
+    margin: 8;
+    user-select: none;
+}
+
+.f_monad{
+    font-family: Monad;
+    font-weight: 200;
+}
+
+.f_rale{
+    font-family: Raleway;
+    font-weight: 100;
+}
+
+.s_heading{
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.s_regular{
+    font-size: 30px;
+}
+
+.s_small{
+    font-size: 25px;
+}
+
+.s_20{
+    font-size: 20px;
+}
+
+.s_smaller{
+    font-size: 15px
+}
+
+.container{
+    text-align: center;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.inline{
+    display: inline;
+}
+
+.center{
+    text-align: center;
+}
+
+.align_right{
+    position: absolute;
+    right: 20px;
+}
+
+.c_red{
+    color: rgb(207, 62, 62);
+}
+
+.logout{
+    position: absolute;
+    left: 20px;
+}
+
+.createnew{
+    position: absolute;
+    right: 20px;
+}
+
+.dash{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.option{
+    min-width: 600px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italics{
+    font-style: italic;
+}
+
+.more{
+    position: absolute;
+    right: 50px;
+    color: #555;
+}
+
+.leftspan, .rightspan{
+    display: inline-block;
+    min-width: 500px;
+}
+
+.leftspan{
+    margin-right: 5px;
+    text-align: right;
+}
+
+.rightspan{
+    margin-left: 5px;
+    text-align: left;
+}
+
+.register_form{
+    display: inline-block;
+    width: 150;
+    text-align: right;
+    margin-right: 10px;
+}
+
+label.create_form{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input.create_form, textarea.create_form{
+    width: 900px;
+    border: 2px solid #eeeeee;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.inv_element{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: #eee;
+    border: 2px;
+    display: inline-grid;
+    border-radius: 10px;
+    padding: 10px;
+    align-content: center;
+}
+
+.inv_element:hover{
+    background-color: #ccc;
+}
+
+.card_title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card_date{
+    color: #555;
+    font-size: 16px;
+}
+
+.bracket{
+    text-align: center;
+}
+
+.invitation{
+    padding: 20px;
+    border: solid 4px #ececec;
+    border-radius: 5px;
+    display: inline-block;
+    width: 900px;
+    margin: 30px 100px;
+}
+
+.inv_title{
+    font-size: 40px;
+    text-align: center;
+}
+
+.inv_date{
+    text-align: right;
+    font-style: italic;
+    color: #333;
+}
+
+.inv_creator{
+    font-style: italic;
+    text-align: left;
+}
+
+.inv_body{
+    text-align: left;
+    font-size: 20px;
+}
+
+.inv_footer{
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+}
+
+hr.acc{
+    margin-top: 0px;
+}
+
+hr.mt_10{
+    margin-top: 10px;
+}
+
+.drop_menu{
+    background-color: #eee;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    min-width: 180px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.drop_content{
+    display: none;
+    position: absolute;
+    left: 18px;
+    z-index: 1;
+    text-align: left;
+    background-color: #eee;
+    padding: 10px;
+    min-width: 180;
+    top: 73px;
+}
+
+.drop_menu:hover{
+    background-color: #ccc;
+}
+
+.drop_menu:hover .drop_content{
+    display: block;
+}
+
+.notif_container{
+    margin: 20px 100px;
+    border: solid 2px #ececec;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.notif_container li{
+    margin: 5px;
+}
+
+input{
+    width: 300px;
+    border: 2px solid #eeeeee;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+button{
+    font-family: Raleway;
+    background-color: #eeeeee;
+    color: #777;
+    border: none;
+    font-size: 18px;
+    padding: 16px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: #eeeeee;
+    color: black;
+}
+
+a{
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+a button{
+    background-color: #eeeeee;
+    color: #777;
+}
+
+a button:hover{
+    background-color: #eeeeee;
+    color: black;
+}

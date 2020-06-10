@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<br><br><br>
+<h2 class="f_monad s_heading center">I N V I T E</h2>
+
+<div class="container">
+    <% if(errors != undefined){ %> 
+        <div class="s_smaller c_red">
+          <% errors.forEach(function(error){ %>
+            <%= error.msg %><br>
+          <% }); %>
+        </div>
+      <% } %> 
+</div>
+<div class="container">
+<div class="inline">
+    <form action="/users/register" method="POST">
+        <br>
+        <div class="s_small">
+            <label class="register_form" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div><br>
+        <div class="s_small">
+            <label class="register_form" for="username">Userame:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+        </div><br>
+        <div class="s_small">
+            <label class="register_form" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div><br>
+        <div class="s_small">
+            <label class="register_form" for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div><br>
+        <div class="s_small">
+            <label class="register_form" for="password2">Confirm:</label>
+            <input type="password" id="password2" name="password2" placeholder="Confirm your password">
+        </div><br><br>
+        <button type="submit">Register</button>
+    </form>
+    
+    <h5>Already have an account? <a href="/users/login">Login here</a></h5>
+</div>
+</div>

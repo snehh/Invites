@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<br><br><br>
+<h2 class="f_monad s_heading center">I N V I T E</h2>
+
+<div class="container">
+    <% if(typeof message != undefined){ %>
+        <div class="s_smaller c_red">
+          <%= message %><br><br>
+        </div>
+    <% } %> 
+</div>
+
+<div class="container">
+<div class="inline">
+    <form action="/users/login" method="POST">
+        <div class="s_regular">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" value="">
+        </div><br><br>
+        <div class="s_regular">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" value="">
+        </div><br>
+        <button type="submit">Login</button>
+    </form>
+    <h5>Don't have an account? <a href="/users/register">Register now</a></h5>
+</div>
+</div>

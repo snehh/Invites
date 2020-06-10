@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<h1 class="f_Monad s_heading dash align_right">CREATE NEW</h1>
+<a href="/homepage"><button class="logout">Cancel</button></a>
+<br><br><br>
+<hr class="mt_10">
+
+<div class="container">
+    <% if (errors.length != 0)  errors.forEach(error => { %>
+        <div class="s_smaller c_red">
+          <%= error %><br>
+        </div>
+    <% }) %> 
+</div>
+
+<div class="container">
+    <div class="inline">
+        <form action="/homepage/event/new" method="POST">
+            <br>
+            <div class="s_small">
+                <label required class="create_form" for="name">*Title:</label>
+                <input class="create_form" type="text" id="name" name="name" placeholder="Header" default= <%= name %> >
+            </div><br>
+            <div class="s_small">
+                <label required class="create_form" for="date">*Event Date:</label>
+                <input class="create_form" type="date" id="date" name="date">
+            </div><br>
+            <div class="s_small">
+                <label required class="create_form" for="body">*Body:</label>
+                <textarea class="create_form" type="text" id="body" name="body" placeholder="Body" default='<%= body %>'></textarea>
+            </div><br>
+            <div class="s_small">
+                <label required class="create_form" for="footer">Footer:</label>
+                <input class="create_form" type="text" id="footer" name="footer" placeholder="Footer" default= <%= footer %> >
+            </div><br>
+            <div class="s_small">
+                <label required class="create_form" for="priv">Invitees:</label>
+                <input class="create_form" type="text" id="priv" name="priv" placeholder="Enter username separated by space / leave empty for public event">
+            </div><br>
+            <button type="submit">Add Event</button>
+        </form>
+    </div>
+</div>

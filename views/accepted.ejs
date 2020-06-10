@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<h1 class="f_Monad s_heading dash align_right">Accepted Invites</h1>
+<a href="/homepage"><button class="logout">Go Back</button></a>
+<br><br><br>
+<hr class="mt_10"><br><br><br>
+
+<div class="container inv_container">
+    <% if(events.length == 0) { %>
+        <div class="italics">Accepted events will appear here</div>
+    <% } %>
+    <% events.forEach(event => { %>
+        <div class="inv_element">
+            <div class="card_title"><%= event.title %></div>
+            <div class="card_date">On: <%= event.date.toDateString() %></div><br>
+            <div><a href="/homepage/event/accepted/<%= event._id %>">View</a></div>
+        </div>
+    <% }) %>
+</div>

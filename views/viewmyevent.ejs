@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<h1 class="f_Monad s_heading dash align_right">VIEW</h1>
+<a href="/homepage"><button class="logout">Go Back</button></a>
+<br><br><br>
+<hr class="mt_10"><br>
+
+<div class="bracket">
+<div class="invitation">
+    <div class="inv_title"><%= event.title %></div>
+    <div class="inv_date"><%= event.date.toDateString() %></div><br><br>
+    <div class="inv_body"><%= event.markdown %></div><br><br>
+    <div class="inv_footer"><%= event.footer %></div>
+</div>
+<div><%= event.attendees %> people have accepted the invitation</div>
+</div>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<h1 class="f_Monad s_heading dash align_right">Notifications</h1>
+<a href="/homepage"><button class="logout">Go to Homepage</button></a>
+<br><br><br>
+<hr class="mt_10"><br><br>
+
+<% if(events.length == 0) { %> 
+    <div class="italics">You do not have any notifications</div>
+<% } %>
+
+
+    <% events.forEach(event => { %>
+    <div class="notif_container">
+        <li>
+            You have an invitation for <div class="inline-block bold"><%= event.title %></div> from <%= event.createdBy %> <a class="italics" href="/homepage/event/show/<%= event._id %>">View more</a>
+        </li>
+    </div>
+    <% }) %>
